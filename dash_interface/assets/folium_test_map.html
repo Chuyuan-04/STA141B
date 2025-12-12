@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0150d512079be68520496d622b95549 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0150d512079be68520496d622b95549" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0150d512079be68520496d622b95549 = L.map(
+                "map_c0150d512079be68520496d622b95549",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a67bebe922cf0a83179cd962709b3c21 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a67bebe922cf0a83179cd962709b3c21.addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var marker_8fa11c46c721da294036f9808e8de7ee = L.marker(
+                [33.9416, -118.409],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_17b92083acb92d2854353d407295f3fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbeac9ccda06ae697e374f700d634d70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45e408c36751bcdb8640064a3bc87946 = $(`<div id="html_45e408c36751bcdb8640064a3bc87946" style="width: 100.0%; height: 100.0%;"><b>LAX</b><br>Avg Fare: $135.48</div>`)[0];
+                popup_cbeac9ccda06ae697e374f700d634d70.setContent(html_45e408c36751bcdb8640064a3bc87946);
+            
+        
+
+        marker_8fa11c46c721da294036f9808e8de7ee.bindPopup(popup_cbeac9ccda06ae697e374f700d634d70)
+        ;
+
+        
+    
+    
+            marker_8fa11c46c721da294036f9808e8de7ee.bindTooltip(
+                `<div>
+                     LAX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fa11c46c721da294036f9808e8de7ee.setIcon(icon_17b92083acb92d2854353d407295f3fc);
+            
+    
+            var marker_809e75c9269c49f89eddf04f7ffa5ef5 = L.marker(
+                [36.08, -115.1522],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_689d50628c497e366383a1a02a9ba3e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_128838d558bbe3e16731543c20d506ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93842b61e65a27c63a7253b062694588 = $(`<div id="html_93842b61e65a27c63a7253b062694588" style="width: 100.0%; height: 100.0%;"><b>LAS</b><br>Avg Fare: $127.24</div>`)[0];
+                popup_128838d558bbe3e16731543c20d506ae.setContent(html_93842b61e65a27c63a7253b062694588);
+            
+        
+
+        marker_809e75c9269c49f89eddf04f7ffa5ef5.bindPopup(popup_128838d558bbe3e16731543c20d506ae)
+        ;
+
+        
+    
+    
+            marker_809e75c9269c49f89eddf04f7ffa5ef5.bindTooltip(
+                `<div>
+                     LAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_809e75c9269c49f89eddf04f7ffa5ef5.setIcon(icon_689d50628c497e366383a1a02a9ba3e2);
+            
+    
+            var marker_d320ddfafb5360016cfddfebfd16128c = L.marker(
+                [39.85, -104.674],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_35678bddd0c5f15238b5a303500428b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5530fb5ce89047889e13244e0ee6da8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce1c46be40fe466bb333dfb9e6bbbd27 = $(`<div id="html_ce1c46be40fe466bb333dfb9e6bbbd27" style="width: 100.0%; height: 100.0%;"><b>DEN</b><br>Avg Fare: $205.18</div>`)[0];
+                popup_5530fb5ce89047889e13244e0ee6da8a.setContent(html_ce1c46be40fe466bb333dfb9e6bbbd27);
+            
+        
+
+        marker_d320ddfafb5360016cfddfebfd16128c.bindPopup(popup_5530fb5ce89047889e13244e0ee6da8a)
+        ;
+
+        
+    
+    
+            marker_d320ddfafb5360016cfddfebfd16128c.bindTooltip(
+                `<div>
+                     DEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d320ddfafb5360016cfddfebfd16128c.setIcon(icon_35678bddd0c5f15238b5a303500428b8);
+            
+    
+            var marker_e488e031492571f2d2200fefdf91e4a7 = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_7e6ab1907250d1d14d060131873b2799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6151924da7a435b1db07b972910f96d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1999a0bd1e7b225bb76de07516a0a03c = $(`<div id="html_1999a0bd1e7b225bb76de07516a0a03c" style="width: 100.0%; height: 100.0%;"><b>JFK</b><br>Avg Fare: $194.75</div>`)[0];
+                popup_6151924da7a435b1db07b972910f96d7.setContent(html_1999a0bd1e7b225bb76de07516a0a03c);
+            
+        
+
+        marker_e488e031492571f2d2200fefdf91e4a7.bindPopup(popup_6151924da7a435b1db07b972910f96d7)
+        ;
+
+        
+    
+    
+            marker_e488e031492571f2d2200fefdf91e4a7.bindTooltip(
+                `<div>
+                     JFK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e488e031492571f2d2200fefdf91e4a7.setIcon(icon_7e6ab1907250d1d14d060131873b2799);
+            
+    
+            var marker_9de2e5a33d64c74aca4b73651b6fed31 = L.marker(
+                [41.9742, -87.9073],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_2308a526c56c1c9a0ed612d7e69fc8c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1263bc05476a6daf1adfdce599fb3e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a8d04e6862633ec050b072e005db1ee = $(`<div id="html_3a8d04e6862633ec050b072e005db1ee" style="width: 100.0%; height: 100.0%;"><b>ORD</b><br>Avg Fare: $193.59</div>`)[0];
+                popup_d1263bc05476a6daf1adfdce599fb3e0.setContent(html_3a8d04e6862633ec050b072e005db1ee);
+            
+        
+
+        marker_9de2e5a33d64c74aca4b73651b6fed31.bindPopup(popup_d1263bc05476a6daf1adfdce599fb3e0)
+        ;
+
+        
+    
+    
+            marker_9de2e5a33d64c74aca4b73651b6fed31.bindTooltip(
+                `<div>
+                     ORD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9de2e5a33d64c74aca4b73651b6fed31.setIcon(icon_2308a526c56c1c9a0ed612d7e69fc8c7);
+            
+    
+            var marker_80d05d4131a30934ce6a276f6185aead = L.marker(
+                [32.8998, -97.0403],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_37639976c53c212d0f0789cfb3a51978 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acdbc8625299cd53ae7197ad32df73b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb219af191fb0ccaab816a3bb7ea4f9d = $(`<div id="html_eb219af191fb0ccaab816a3bb7ea4f9d" style="width: 100.0%; height: 100.0%;"><b>DFW</b><br>Avg Fare: $193.59</div>`)[0];
+                popup_acdbc8625299cd53ae7197ad32df73b5.setContent(html_eb219af191fb0ccaab816a3bb7ea4f9d);
+            
+        
+
+        marker_80d05d4131a30934ce6a276f6185aead.bindPopup(popup_acdbc8625299cd53ae7197ad32df73b5)
+        ;
+
+        
+    
+    
+            marker_80d05d4131a30934ce6a276f6185aead.bindTooltip(
+                `<div>
+                     DFW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80d05d4131a30934ce6a276f6185aead.setIcon(icon_37639976c53c212d0f0789cfb3a51978);
+            
+    
+            var marker_12512221ce1a0a459e2eebe3d2f29f0b = L.marker(
+                [37.6213, -122.379],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_6ddcce02f24b5094d97629c919fbd38e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86b8c67c47c9377f98c037d79ecb3a4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_840d62403c16d4bcde571b24f53ce126 = $(`<div id="html_840d62403c16d4bcde571b24f53ce126" style="width: 100.0%; height: 100.0%;"><b>SFO</b><br>Avg Fare: $160.38</div>`)[0];
+                popup_86b8c67c47c9377f98c037d79ecb3a4c.setContent(html_840d62403c16d4bcde571b24f53ce126);
+            
+        
+
+        marker_12512221ce1a0a459e2eebe3d2f29f0b.bindPopup(popup_86b8c67c47c9377f98c037d79ecb3a4c)
+        ;
+
+        
+    
+    
+            marker_12512221ce1a0a459e2eebe3d2f29f0b.bindTooltip(
+                `<div>
+                     SFO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12512221ce1a0a459e2eebe3d2f29f0b.setIcon(icon_6ddcce02f24b5094d97629c919fbd38e);
+            
+    
+            var marker_a23c067d72bccdaeded8240649ab5392 = L.marker(
+                [47.4502, -122.3088],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_264409063b328c39cf4f76e0622ceffc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b1d9fb1e8f2d17cc168014f3437a74e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_716ebd12b9a5737f1cbe474abc3fec05 = $(`<div id="html_716ebd12b9a5737f1cbe474abc3fec05" style="width: 100.0%; height: 100.0%;"><b>SEA</b><br>Avg Fare: $185.72</div>`)[0];
+                popup_3b1d9fb1e8f2d17cc168014f3437a74e.setContent(html_716ebd12b9a5737f1cbe474abc3fec05);
+            
+        
+
+        marker_a23c067d72bccdaeded8240649ab5392.bindPopup(popup_3b1d9fb1e8f2d17cc168014f3437a74e)
+        ;
+
+        
+    
+    
+            marker_a23c067d72bccdaeded8240649ab5392.bindTooltip(
+                `<div>
+                     SEA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a23c067d72bccdaeded8240649ab5392.setIcon(icon_264409063b328c39cf4f76e0622ceffc);
+            
+    
+            var marker_454c80027e90065dcec4a7ec71737237 = L.marker(
+                [28.4312, -81.308],
+                {
+}
+            ).addTo(map_c0150d512079be68520496d622b95549);
+        
+    
+            var icon_75243622476493f8f0e4f17fce334e2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f91ece950f12524cb14cf70adb2dd67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ff04e7ede4d91b1509a96ad1233c9ae = $(`<div id="html_8ff04e7ede4d91b1509a96ad1233c9ae" style="width: 100.0%; height: 100.0%;"><b>MCO</b><br>Avg Fare: $189.74</div>`)[0];
+                popup_4f91ece950f12524cb14cf70adb2dd67.setContent(html_8ff04e7ede4d91b1509a96ad1233c9ae);
+            
+        
+
+        marker_454c80027e90065dcec4a7ec71737237.bindPopup(popup_4f91ece950f12524cb14cf70adb2dd67)
+        ;
+
+        
+    
+    
+            marker_454c80027e90065dcec4a7ec71737237.bindTooltip(
+                `<div>
+                     MCO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_454c80027e90065dcec4a7ec71737237.setIcon(icon_75243622476493f8f0e4f17fce334e2d);
+            
+</script>
+</html>
